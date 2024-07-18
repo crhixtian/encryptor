@@ -223,3 +223,52 @@ body {
         margin-top: 0px;
     }
 }
+
+@media (max-width: 500px) {
+
+    .main_content {
+        height: auto;
+        margin: 16px;
+        gap: 40px;
+    }
+
+    .logo_container {
+        margin-top: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .input_section {
+        margin-top: 40px;
+    }
+
+    .input_bottons {
+        flex-direction: column;
+    }
+
+    .encrypt_button,
+    .decrypt_button {
+        width: 100%;
+    }
+
+    .input_container_textarea {
+        line-height: 2.5rem;
+        height: calc(8 * 2rem);
+    }
+
+    .information_section {
+        margin: 0;
+        display: none;
+    }
+
+    .output_section_text_encrypt{
+        line-height: 2rem;
+    }
+
+    .output_section {
+        display: flex;
+        height: auto;
+        margin: 0;
+    }
+
+}
