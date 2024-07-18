@@ -38,8 +38,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 160px 0 40px 0;
-    height: calc(100vh - 200px);
+    margin: 160px 0 72px 0;
+    height: calc(100vh - 232px);
+    gap: 32px;
 }
 
 .input_container_textarea {
@@ -97,7 +98,7 @@ body {
     color: var(--secondary_color);
 }
 
-.output_section {
+.information_section {
     background-color: var(--tertiary_color);
     margin: 40px 0 40px 0;
     height: calc(100vh - 80px);
@@ -109,24 +110,116 @@ body {
     gap: 16px
 }
 
-.output-imagen {
+.information_section_imagen {
     padding: 0 16px 0 16px;
 }
 
-.output-text,
-.output-subtext {
+.information_section_text,
+.information_section_subtext {
     padding: 0 32px 0 32px;
     text-align: center;
     font-family: var(--font_inter), serif;
 }
 
-.output-text {
+.information_section_text {
     color: var(--quaternary_color);
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.output-subtext {
+.information_section_subtext {
     font-size: 1rem;
     color: var(--quinary_color);
+}
+
+.output_section {
+    background-color: var(--tertiary_color);
+    margin: 40px 0 40px 0;
+    height: calc(100vh - 80px);
+    border-radius: 32px;
+    width: 22.5%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.output_section_text_encrypt {
+    font-size: 1.5rem;
+    font-family: var(--font_inter), serif;
+    margin: 32px;
+    color: var(--quinary_color);
+    margin: 32px 32px 0 32px;
+}
+
+.output_section_button_copy {
+    height: 67px;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-family: var(--font_inter), serif;
+    border: 2px solid var(--secondary_color);
+    color: var(--secondary_color);
+    margin: 0 32px 32px 32px;
+}
+
+/* arriba | derecha | abajo | izquierda */
+
+
+@media (max-width: 1600px) {
+    .information_section {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .information_section {
+        width: 30%;
+    }
+}
+
+@media (max-width: 900px) {
+    .main_content {
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .logo_container {
+        margin-left: -40px;
+    }
+
+    .input_section {
+        width: 100%;
+        height: 50%;
+        margin: 80px 0 0 0;
+    }
+
+    .information_section {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .information_section_imagen {
+        display: none;
+    }
+
+    .information_section_text {
+        padding-top: 32px;
+    }
+
+    .information_section_subtext {
+        padding-bottom: 32px;
+    }
+
+    .output_section {
+        display: none;
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+    }
 }
