@@ -139,10 +139,10 @@ body {
 
 .output_section {
     background-color: var(--tertiary_color);
-    margin: 40px 0 40px 0;
+    margin: -90px 0 40px 0;
     height: calc(100vh - 80px);
     border-radius: 32px;
-    width: 22.5%;
+    width: 25%;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -170,13 +170,13 @@ body {
 
 
 @media (max-width: 1600px) {
-    .information_section {
+    .information_section, .output_section {
         width: 25%;
     }
 }
 
 @media (max-width: 1200px) {
-    .information_section {
+    .information_section, .output_section {
         width: 30%;
     }
 }
