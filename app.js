@@ -2,46 +2,54 @@ const WARNING_MESSAGE = "Solo letras minúsculas y sin acentos";
 const COPY_MESSAGE = "Copiado en portapapeles";
 const COPY = "Copiar";
 
-function encrypt() {
+function setVisibility(showInfo, showOutput) {
+    document.getElementById("informationSection").style.display = showInfo ? "flex" : "none";
+    document.getElementById("outputSection").style.display = showOutput ? "flex" : "none";
+}
+
+function encryptText(text) {
+    text = text.replace(/e/g, "enter");
+    text = text.replace(/i/g, "imes");
+    text = text.replace(/a/g, "ai");
+    text = text.replace(/o/g, "ober");
+    text = text.replace(/u/g, "ufat");
+    return text;
+}
+
+function decryptText(text) {
+    text = text.replace(/enter/g, "e");
+    text = text.replace(/imes/g, "i");
+    text = text.replace(/ai/g, "a");
+    text = text.replace(/ober/g, "o");
+    text = text.replace(/ufat/g, "u");
+    return text;
+}
+
+function processText(isEncrypting) {
     let text = document.getElementById("textInput").value;
     if (!validInput(text)) {
         alert(WARNING_MESSAGE);
         return;
     }
+
     if (text === "") {
-        document.getElementById("informationSection").style.display = "flex";
-        document.getElementById("outputSection").style.display = "none";
+        setVisibility(true, false);
     } else {
-        document.getElementById("informationSection").style.display = "none";
-        document.getElementById("outputSection").style.display = "flex";
-        document.getElementById("outputText").textContent = text
-            .replace(/e/g, "enter")
-            .replace(/i/g, "imes")
-            .replace(/a/g, "ai")
-            .replace(/o/g, "ober")
-            .replace(/u/g, "ufat");
+        setVisibility(false, true);
+        if (isEncrypting) {
+            document.getElementById("outputText").textContent = encryptText(text);
+        } else {
+            document.getElementById("outputText").textContent = decryptText(text);
+        }
     }
 }
 
+function encrypt() {
+    processText(true);
+}
+
 function decrypt() {
-    let text = document.getElementById("textInput").value;
-    if (!validInput(text)) {
-        alert(WARNING_MESSAGE);
-        return;
-    }
-    if (text === "") {
-        document.getElementById("informationSection").style.display = "flex";
-        document.getElementById("outputSection").style.display = "none";
-    } else {
-        document.getElementById("informationSection").style.display = "none";
-        document.getElementById("outputSection").style.display = "flex";
-        document.getElementById("outputText").textContent = text
-            .replace(/enter/g, "e")
-            .replace(/imes/g, "i")
-            .replace(/ai/g, "a")
-            .replace(/ober/g, "o")
-            .replace(/ufat/g, "u");
-    }
+    processText(false);
 }
 
 function copy() {
