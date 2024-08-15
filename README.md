@@ -4,22 +4,22 @@
 
 ## 🎯 Características
 
-    - **Encriptación:** Convierte tu texto en un mensaje codificado para proteger su contenido.
-    - **Desencriptación:** Recupera el texto original de un mensaje encriptado.
-    - **Copia al portapapeles:** Fácilmente copia el texto encriptado o desencriptado con un solo clic.
+- **Encriptación:** Convierte tu texto en un mensaje codificado para proteger su contenido.
+- **Desencriptación:** Recupera el texto original de un mensaje encriptado.
+- **Copia al portapapeles:** Fácilmente copia el texto encriptado o desencriptado con un solo clic.
 
 ## 🚀 ¿Cómo funciona?
 
-    1. **Ingreso de texto:** Ingresa tu mensaje en el área de texto. Solo se permiten letras minúsculas y sin acentos.
-    2. **Encriptar:** Haz clic en el botón "Encriptar" para codificar tu mensaje.
-    3. **Desencriptar:** Si tienes un mensaje encriptado, pégalo en el área de texto y haz clic en "Desencriptar" para recuperar el texto original.
-    4. **Copiar:** Utiliza el botón "Copiar" para guardar el resultado en tu portapapeles.
+1. **Ingreso de texto:** Ingresa tu mensaje en el área de texto. Solo se permiten letras minúsculas y sin acentos.
+2. **Encriptar:** Haz clic en el botón "Encriptar" para codificar tu mensaje.
+3. **Desencriptar:** Si tienes un mensaje encriptado, pégalo en el área de texto y haz clic en "Desencriptar" para recuperar el texto original.
+4. **Copiar:** Utiliza el botón "Copiar" para guardar el resultado en tu portapapeles.
 
 ## 🛠️ Tecnologías Utilizadas
 
-    - **HTML:** Para la estructura básica de la página.
-    - **CSS:** Para el diseño y el estilo de la interfaz de usuario.
-    - **JavaScript:** Para la lógica de encriptación, desencriptación y manipulación del DOM.
+- **HTML:** Para la estructura básica de la página.
+- **CSS:** Para el diseño y el estilo de la interfaz de usuario.
+- **JavaScript:** Para la lógica de encriptación, desencriptación y manipulación del DOM.
 
 ## 📸 Vistas de la Aplicación
 
