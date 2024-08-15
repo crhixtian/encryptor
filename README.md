@@ -10,11 +10,8 @@
 🚀 ¿Cómo funciona?
 
     Ingreso de texto: Ingresa tu mensaje en el área de texto. Solo se permiten letras minúsculas y sin acentos.
-
     Encriptar: Haz clic en el botón "Encriptar" para codificar tu mensaje.
-
     Desencriptar: Si tienes un mensaje encriptado, pégalo en el área de texto y haz clic en "Desencriptar" para recuperar el texto original.
-
     Copiar: Utiliza el botón "Copiar" para guardar el resultado en tu portapapeles.
 
 🛠️ Tecnologías Utilizadas
